@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.2.0/css/all.css" rel="stylesheet"/>
+  <!-- 加载open layer依赖 -->
+  <script src="./src/OL_SDK/include-openlayers-local.js"></script>
+  <!-- 导入FileSaver.js -->
+  <!-- <script src="https://lib.baomitu.com/FileSaver.js/2.0.5/FileSaver.js"></script> -->
+  <!-- 引入四个类封装的方法 -->
+  <script src="./src/utils/mapGISAddPoint.js"></script> <!-- 添加点 -->
+  <script src="./src/utils/mapGISAddLineString.js"></script> <!-- 添加线 -->
+  <script src="./src/utils/mapGISAddArea.js"></script> <!-- 添加面 -->
+  <script src="./src/utils/query.js"></script> <!-- 查询放法 -->
+  <!-- 导入画笔依赖 -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.2.2/mapbox-gl-draw.js"></script>
+  <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.2.2/mapbox-gl-draw.css" type="text/css">
+  <!-- 引入turf依赖 -->
+  <!-- <script src="https://lib.baomitu.com/Turf.js/latest/turf.min.js"></script> -->
+  <script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
+  <!-- <script src="https://lib.baomitu.com/Turf.js/6.5.0/turf.min.js"></script> -->
+  <!-- <script crossorigin="anonymous" integrity="sha384-ihG4lQxPGPjtZPEpUiw4RFFUbU62sOLxmn71ibkwRif6ZWo8khaloT23T8ivVvo3" src="https://lib.baomitu.com/Turf.js/0.4.3/turf.js"></script> -->
+  <!-- <script crossorigin="anonymous" integrity="sha384-BxjgtZVtEKIXxjBCtRPldqr6lTCxQMfmQwzKC7mwwdKFZoqVxlf4rHvKtFPOlBKr" src="https://lib.baomitu.com/Turf.js/0.4.3/turf.min.js"></script> -->
+  <!-- 引入animaton.css -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <!-- 引入AL7 -->
+  <script src='https://unpkg.com/@antv/l7'></script>
+  <!-- 引入jquery -->
+  <script src="https://lib.baomitu.com/jquery/2.2.4/jquery.js"></script>
+  <title>Vite App</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
